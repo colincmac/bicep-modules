@@ -1,0 +1,40 @@
+{
+  "podIdentityVersion": "v1",
+  "acrName": "colinmac",
+  "rg": {
+    "sharedServices": "lz-connectivity-001",
+    "connectivity": "lz-connectivity-001",
+    "aksLandingZone": "lz-aks-workloads-001"
+  },
+  "options": {
+    "deployNotaryInfra": true
+  },
+  "presets": {
+    "mgmt": {
+      "tags": {
+        "governance": "platform/mgmt"
+      }
+    },
+    "connect": {
+      "tags": {
+        "governance": "platform/connect"
+      }
+    },
+    "identity": {
+      "tags": {
+        "governance": "platform/identity"
+      }
+    },
+    "sandbox": {
+      "description": "Allows for development work.",
+      "tags": {
+        "governance": "sandbox"
+      }
+    },
+    "corp-lz": {
+      "tags": {
+        "governance": "sandbox"
+      }    
+    }
+  }
+}
